@@ -1,0 +1,17 @@
+As a Web3 seasoned developer, create a smartcontract in solidity to manage a dNFT (ERC-721 with additional metadata in IPFS). 
+
+Non functional requirements
+>Include comments to explain each method. Focus on small methods and clean and clear code. 
+>Functional requirements
+>The network is Ethereum.
+
+>The NFT will be called SHTS (Share The Coffee Shop).  
+>The metadata will be stored in IPFS. It is the last_date and the owner_address.
+>last_date is the date when it was “used” the SHTS token. This means transferring, counting or obtaining metadata of such SHTS token. Therefore all the methods impacting a single SHTS token should update its metadata.
+>owner_address is the address of the owner of the SHTS. It should be updated with all the transfer operations.
+>They will be minted 100 NFTs at the start and assigned to the main address. 
+>The contract should ensure it never mint more than 100 tokens.
+>There will be a transfer method to transfer one NFT from one address to another different address.
+>There will be a method to get the data of a SHTS token. if you pass as parameter a SHTSid, it returns the metadata and data of that token. if you pass as parament one address, it provides the data and metadata of all the tokens assigned to that address. if no parameter is provided, it gives a list of all tokens with their metadata and data
+>The contract owner may transfer any token with a last_date value older than 6 months. 
+>The token owner will be notified of any movement on his tokens.
